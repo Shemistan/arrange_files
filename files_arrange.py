@@ -68,9 +68,26 @@ class Sorter:
         directory = os.path.join(sorted, date_year, date_mon)
         return directory
 
-    # def sorter(self):
-    #     file_name = 'sorted'
+    def sorter(self):
+        file_name = 'sorted'
+        for dir_file, dir_name, files in os.walk(file_name):
+            for file in files:
+                dir = os.path.join(dir_file, file)
+                date_creat = os.path.getctime(dir)
+                date_creat = time.gmtime(date_creat)
+                print(date_creat)
+                self.create_directory(date_creat)
 
+    def create_directory(self, date):
+        new = 'new'
+
+        directory = os.path.join(new, str(date[0]), str(date[1]))
+        if os.path.isdir(directory):
+            return directory
+        else:
+            os.makedirs(directory)
 
 a = Sorter(file_name='icons.zip')
-a.sorter_zip()
+#a.sorter_zip()
+a.sorter()
+
