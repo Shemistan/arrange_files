@@ -13,10 +13,10 @@ class SorterFiles:
     folders (zip_archive - no preliminary
     unzip) by year and month to another.
 
-    Input parameters:
+        Input parameters:
     folder_name ----------- folder to scan,
     where_to_copy --------- target folder.
-
+        start work script
     .sorter() ------------- start_work
     """
 
