@@ -5,21 +5,20 @@ import shutil
 import time
 import zipfile
 
-"""Script for organizing files
-
-The script decomposes files from one
-folders (zip_archive - no preliminary
-unzip) by year and month to another.
-
-Input parameters: 
-folder_name ----------- folder to scan,
-where_to_copy --------- target folder.
- 
-.sorter() ------------- start_work
-"""
-
 
 class SorterFiles:
+    """Script for organizing files
+
+    The script decomposes files from one
+    folders (zip_archive - no preliminary
+    unzip) by year and month to another.
+
+    Input parameters:
+    folder_name ----------- folder to scan,
+    where_to_copy --------- target folder.
+
+    .sorter() ------------- start_work
+    """
 
     def __init__(self, folder_name, where_to_copy):
         self.folder_name = folder_name
