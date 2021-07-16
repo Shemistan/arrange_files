@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import os, time, shutil, zipfile
+import os
+import shutil
+import time
+import zipfile
+
 """Script for organizing files
 
 The script decomposes files from one
