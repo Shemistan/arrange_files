@@ -18,6 +18,7 @@ class SorterFiles:
     where_to_copy --------- target folder.
         start work script
     .sorter() ------------- start_work
+    
     """
 
     def __init__(self, folder_name, where_to_copy):
