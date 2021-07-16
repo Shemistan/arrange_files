@@ -32,6 +32,7 @@ class SorterFiles:
             directory = self.create_directory_zip(date)
             content.filename = os.path.basename(content.filename)
             zfile.extract(content, directory)
+        zfile.close()
 
     def create_directory_zip(self, date):
         sorted = self.where_to_copy
